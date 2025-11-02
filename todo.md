@@ -1,93 +1,114 @@
-# Hyper-Stack Game - Development TODO
+# MAD RUN: Rise Through Insanity - Project TODO
 
-## Core Game Mechanics
-- [x] Initialize Three.js scene with camera, lighting, and renderer
-- [x] Implement Cannon.js physics engine integration
-- [x] Create block generation system with random shapes (cube, cylinder, prism)
-- [x] Implement block horizontal movement (oscillation)
-- [x] Implement drop input handling (mouse click, keyboard, touch)
-- [x] Create tower stacking logic with collision detection
-- [x] Implement block shaving/resizing on overlap detection
-- [x] Implement game over condition (block falls off tower)
+## Core Game Engine
+- [x] Three.js scene setup with neon cyber world environment
+- [x] Player character model and animations
+- [x] Third-person dynamic camera system with smooth motion
+- [x] WASD/Joystick movement controls
+- [x] Jump and dodge mechanics (Space/Swipe Up)
+- [x] Attack system (Mouse/Tap)
+- [x] Skill activation system (Shift/Hold)
 
-## UI/UX and Game States
-- [x] Create main menu screen
-- [x] Create in-game HUD (score, combo counter, height display)
-- [x] Create game over screen with score display
-- [x] Implement "Play Again" button
-- [x] Add responsive design for mobile and desktop
-- [ ] Create pause/resume functionality
-- [ ] Implement loading screen
+## Combat & Enemies
+- [x] Enemy AI system with pathfinding
+- [x] Enemy spawning waves
+- [ ] Boss fight mechanics
+- [x] Collision detection and damage system
+- [x] Health/HP system for player and enemies
+- [x] Enemy difficulty scaling
 
-## Progressive Difficulty System
-- [x] Implement speed increase every 10 successful drops
-- [x] Add complex block shapes as stack grows
-- [ ] Implement tower sway/rotation after height milestone
-- [x] Create difficulty scaling logic
+## Game Modes
+- [x] Noob Mode (basic tutorial, weak enemies, Speed Boost reward)
+- [x] Pro Mode (faster enemies, traps, Double Jump reward)
+- [x] God Mode (boss fights, Energy Slash ability)
+- [x] Psycho Mode (gravity flips, slow-mo effects, Time Freeze reward)
+- [x] Ultimate Mode (endless waves, leaderboard, Shadow Skill reward)
 
-## Reward and Combo System
-- [x] Implement perfect drop detection
-- [x] Create combo multiplier system (x2, x3, x4...)
-- [x] Implement Hyper Mode activation (5 consecutive perfect drops)
-- [x] Add Hyper Mode visual effects (neon glow)
-- [x] Implement height bonus milestones (10, 25, 50, 100 blocks)
-- [x] Create score calculation with multipliers
+## Progression System
+- [x] XP system and level progression
+- [x] Coins/currency collection
+- [x] Skill points allocation
+- [x] Ability unlock system
+- [x] Weapon unlock system
+- [x] Costume unlock system
+- [x] Mode progression tracking
 
-## Sound and Music
-- [x] Integrate Howler.js for audio management
-- [x] Create/source upbeat electronic music track
-- [x] Generate or source sound effects:
-  - [x] Perfect drop chime
-  - [x] Good drop thud
-  - [x] Block shave slice
-  - [x] Game over gong
-  - [x] Hyper Mode activation flourish
-- [ ] Implement music tempo increase with combo
-- [x] Add sound toggle button in settings
+## Trap & Environment
+- [x] Red zone damage zones
+- [x] Trap mechanics and placement
+- [ ] Gravity flip effects (Psycho Mode)
+- [ ] Slow-motion effects (Psycho Mode)
+- [x] Environmental hazards
 
-## Visual Polish and Effects
-- [x] Create low-poly 3D block models with vibrant colors
-- [ ] Implement particle effects for perfect drops
-- [ ] Implement shattering effect for shaved blocks
-- [x] Create Hyper Mode neon glow visual effect
-- [ ] Add smooth camera transitions
-- [ ] Implement block landing animations
-- [x] Create background environment (gradient, subtle patterns)
+## Sound Design & Audio
+- [x] Background music for each mode
+- [x] Attack sound effects
+- [x] Enemy hit/death sounds
+- [x] Skill activation sounds
+- [x] UI interaction sounds
+- [ ] Ambient environmental sounds
+- [x] Victory/defeat sounds
+- [x] Sound volume control
 
-## Performance Optimization
-- [ ] Optimize Three.js rendering (LOD, frustum culling)
-- [ ] Optimize physics calculations (reduce collision checks)
-- [ ] Implement asset compression (textures, audio)
-- [ ] Test and optimize for mobile performance
-- [ ] Implement lazy loading for assets
-- [ ] Profile and reduce memory footprint
+## UI/UX
+- [x] Main menu screen
+- [x] Mode selection screen
+- [x] In-game HUD (health, XP, coins, current mode)
+- [ ] Pause menu
+- [x] Game over screen
+- [ ] Victory screen
+- [ ] Settings/options menu
+- [ ] Tutorial system
+- [ ] Skill/ability display
+- [ ] Leaderboard display (Ultimate Mode)
 
-## Responsive Design and Controls
-- [x] Implement mouse click input
-- [x] Implement keyboard input (spacebar, arrow keys)
-- [x] Implement touch input for mobile
-- [x] Test on various screen sizes (mobile, tablet, desktop)
-- [x] Ensure touch controls are responsive and intuitive
-- [x] Add visual feedback for input (button highlights, haptic feedback)
+## Database & Backend
+- [x] User progression tracking
+- [ ] Leaderboard system
+- [ ] Save game state
+- [x] Player statistics (kills, time played, etc.)
+- [x] Unlock tracking (abilities, weapons, costumes)
 
-## Ad Integration Points
-- [x] Create ad container for pre-game loading ads
-- [x] Implement game over screen ad placement
-- [x] Create rewarded video ad integration point
-- [x] Add ad-friendly UI layout
+## Easter Eggs & Polish
+- [ ] Hidden Easter eggs at mode completion
+- [ ] "THE MAD ONE" title achievement system
 
-## Testing and Quality Assurance
-- [x] Test on Chrome, Firefox, Safari, Edge
-- [x] Test on iOS and Android mobile browsers
-- [x] Test gameplay balance and difficulty curve
-- [x] Test audio playback across browsers
-- [x] Performance testing on low-end devices
-- [x] Test all input methods (mouse, keyboard, touch)
+## Visual Polish & Backgrounds
+- [ ] Animated background for each game mode
+- [ ] Particle effects for attacks and skills
+- [ ] Explosion effects for enemy deaths
+- [ ] Skill activation visual effects
+- [ ] Damage numbers floating on screen
+- [ ] Screen shake effects on heavy hits
+- [ ] Smooth camera transitions
+- [ ] Loading screens with animations
 
-## Documentation and Deployment
-- [x] Create comprehensive README.md
-- [x] Create userGuide.md for players
-- [x] Create developer documentation
-- [x] Optimize for CrazyGames publishing standards
-- [x] Prepare game for GitHub upload
-- [x] Create GitHub repository and push code
+## Bug Fixes & Optimization
+- [ ] Fix all console errors
+- [ ] Optimize Three.js rendering
+- [ ] Reduce bundle size
+- [ ] Improve game performance
+- [ ] Fix UI responsiveness issues
+- [ ] Test on multiple browsers
+
+## GitHub Deployment
+- [ ] Clone the GitHub repository
+- [ ] Push all game code to GitHub
+- [ ] Create proper README with instructions
+- [ ] Set up GitHub repository structure
+- [ ] Visual effects and particle systems
+- [ ] Screen shake on impacts
+- [ ] Camera effects for special moments
+
+## Testing & Optimization
+- [ ] Performance optimization (FPS, memory)
+- [ ] Cross-browser testing
+- [ ] Mobile responsiveness
+- [ ] Audio performance
+- [ ] Gameplay balance testing
+
+## Deployment & Documentation
+- [ ] User guide documentation
+- [ ] Game controls documentation
+- [ ] Checkpoint creation
+- [ ] Final deployment
